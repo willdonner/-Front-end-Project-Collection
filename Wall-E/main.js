@@ -49,7 +49,7 @@ new Vue({
         return tl;
       },
       coordinates(e) {
-        const audio = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/Whoa.mp3'),
+        // const audio = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/Whoa.mp3'),
           walleBox = document.getElementById('walle').getBoundingClientRect(),
           walleCoords = walleBox.width / 2 + walleBox.left;
   

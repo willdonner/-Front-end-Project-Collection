@@ -6,7 +6,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.scss">
     
 </head>
 <body>
@@ -180,7 +181,47 @@
         </g>
       </svg>
       </div>
+<section class="container">
+  <ul>
+    <li class="list-item" onclick="jsrc()">
+      jrsc.willdonner.top
+      今日诗词
+    </li>
+    <li class="list-item" onclick="hitokoto()">
+      hitokoto.willdonner.top
+      一言
+    </li>
+    <li class="list-item" onclick="upload()">
+      upload.willdonner.top
+      文件上传外链
+    </li>
+    <li class="list-item" onclick="ionic_components()">
+        ionic3-components.willdonner.top
+      </li>
+      <li class="list-item" onclick="humanNature()">
+          HumanNature.willdonner.top
+        </li>
+  </ul>
+</section>
 </body>
+<script>
+  function jsrc(){
+    window.location.href = 'http://jrsc.willdonner.top';
+  }
+  function hitokoto(){
+    window.location.href = 'hitokoto2.willdonner.top';
+  }
+  function upload(){
+    window.location.href = 'http://upload.willdonner.top/upload/upload'
+  }
+  function ionic_components(){
+    window.location.href = 'http://ionic3-components.willdonner.top'
+  }
+  function humanNature(){
+    window.location.href = 'http://humannature.willdonner.top'
+  }
+</script>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="main.js"></script>
