@@ -49,24 +49,18 @@ new Vue({
         return tl;
       },
       coordinates(e) {
-        // const audio = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/Whoa.mp3'),
           walleBox = document.getElementById('walle').getBoundingClientRect(),
           walleCoords = walleBox.width / 2 + walleBox.left;
   
         if (this.startArms == 0) {
           this.startArms = this.armsTL();
         }
-  
+
         this.y = e.clientY / 80 - 2;
         if (e.clientX > walleCoords) {
           this.x = -(e.clientX / 200);
           this.flip = true;
-          if (this.audioPlay === false) {
-            audio.play();
-            this.audioPlay = true;
-          }
         } else {
-          this.audioPlay = false;
           this.x = e.clientX / 200 - 5;
           this.flip = false;
   

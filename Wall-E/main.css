@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: #23a9e0;
     cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/cockroach%20(2).ico'), default;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
   }
   .title {
     font-size: 3em;

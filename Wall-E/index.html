@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>willdonner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.scss">
     
 </head>
-<body>
+<body style="background: #23a9e0;">
     <div id="app" @mousemove="coordinates">
         <svg id="walle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.4 129.4">
         <defs>
@@ -180,45 +179,46 @@
           </g>
         </g>
       </svg>
+      <section class="container">
+          <ul>
+            <li class="list-item" onclick="jsrc()">
+              jrsc.willdonner.top
+              今日诗词
+            </li>
+            <li class="list-item" onclick="hitokoto()">
+              hitokoto.willdonner.top
+              一言
+            </li>
+            <li class="list-item" onclick="upload()">
+              upload.willdonner.top
+              文件上传外链
+            </li>
+            <li class="list-item" onclick="ionic_components()">
+                ionic3-components.willdonner.top
+              </li>
+              <li class="list-item" onclick="humanNature()">
+                  HumanNature.willdonner.top
+                </li>
+          </ul>
+        </section>
       </div>
-<section class="container">
-  <ul>
-    <li class="list-item" onclick="jsrc()">
-      jrsc.willdonner.top
-      今日诗词
-    </li>
-    <li class="list-item" onclick="hitokoto()">
-      hitokoto.willdonner.top
-      一言
-    </li>
-    <li class="list-item" onclick="upload()">
-      upload.willdonner.top
-      文件上传外链
-    </li>
-    <li class="list-item" onclick="ionic_components()">
-        ionic3-components.willdonner.top
-      </li>
-      <li class="list-item" onclick="humanNature()">
-          HumanNature.willdonner.top
-        </li>
-  </ul>
-</section>
+
 </body>
 <script>
   function jsrc(){
-    window.location.href = 'http://jrsc.willdonner.top';
+    window.open('http://jrsc.willdonner.top');
   }
   function hitokoto(){
-    window.location.href = 'hitokoto2.willdonner.top';
+    window.lopen('hitokoto2.willdonner.top');
   }
   function upload(){
-    window.location.href = 'http://upload.willdonner.top/upload/upload'
+    window.open('http://upload.willdonner.top/upload/upload');
   }
   function ionic_components(){
-    window.location.href = 'http://ionic3-components.willdonner.top'
+    window.open('http://ionic3-components.willdonner.top');
   }
   function humanNature(){
-    window.location.href = 'http://humannature.willdonner.top'
+    window.open('http://humannature.willdonner.top')
   }
 </script>
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
