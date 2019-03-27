@@ -179,28 +179,35 @@
           </g>
         </g>
       </svg>
-      <section class="container">
-          <ul>
-            <li class="list-item" onclick="jsrc()">
-              今日诗词
-            </li>
-            <li class="list-item" onclick="hitokoto()">
-              一言
-            </li>
-            <li class="list-item" onclick="upload()">
-              文件上传外链
-            </li>
-            <li class="list-item" onclick="ionic_components()">
-                ionic组件
-              </li>
-              <li class="list-item" onclick="humanNature()">
-                  人类的本质
-                </li>
-          </ul>
-        </section>
+      
       </div>
-
+<div>
+  <section class="container">
+    <ul>
+      <li class="list-item" onclick="jsrc()">
+        今日诗词
+      </li>
+      <li class="list-item" id="sentence" onclick="hitokoto()">
+        一言
+      </li>
+      <li class="list-item" onclick="upload()">
+        文件上传外链
+      </li>
+      <li class="list-item" onclick="ionic_components()">
+          ionic组件
+        </li>
+        <li class="list-item" onclick="humanNature()">
+            人类的本质
+          </li>
+    </ul>
+  </section>
+</div>
 </body>
+<script>
+window.onload=function(){
+  hitokoto1();
+}
+</script>
 <script>
   function jsrc(){
     window.open('http://jrsc.willdonner.top');
@@ -222,4 +229,29 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+      function hitokoto1()
+         {
+           var imgurl = 'https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=500&encode=&fun=sync&source=';
+             var xmlHttp ;
+             if (window.ActiveXObject)
+              {
+               xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+              }
+              else if (window.XMLHttpRequest)
+              {
+               xmlHttp = new XMLHttpRequest();
+              }
+          console.log(imgurl);
+             xmlHttp.open("Get",imgurl,false);
+             xmlHttp.send();
+             if(xmlHttp.status==404)
+             hasimage();
+             else
+             console.log(xmlHttp.responseText);
+         var sentence = document.getElementById('sentence');
+             sentence.innerText= xmlHttp.responseText+"（一言）";
+         }
+     </script>
 </html>
